@@ -3,6 +3,7 @@ import logo from './assets/icon.svg'
 import hada from './assets/hada.png'
 import heavlink from './assets/heavlink.png'
 import heavage from './assets/heavage.png'
+import design from './assets/design.png'
 import me from './assets/me.webp'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
@@ -18,8 +19,8 @@ const projects = [
   ['Heavage', 'Logistics · 2026', 'bg-ink text-white', heavage, 'https://transport.hevage.co.tz'],
   ['Hada Investment', 'Web application · 2025', 'bg-sky/30', hada, 'https://hadainvestment.co.tz'],
   ['2Bros', 'Inventory management · 2026', 'bg-ink text-white', null, null],
-  ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand', null, null],
-  ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand', null, null],
+  ['Mednet', 'UI/UX Design · 2024', 'bg-brand', design, null],
+
 ]
 
 const experience = [
