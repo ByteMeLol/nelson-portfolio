@@ -42,4 +42,4 @@ git pull origin main
 docker compose up -d --build
 ```
 
-The container listens on port `8080`. For a public domain, put Nginx, Caddy, or a cloud load balancer in front of it and proxy the domain to `127.0.0.1:8080`. Configure HTTPS at that reverse proxy rather than inside this application container.
+The container listens on `127.0.0.1:8080`, so it is only reachable locally on the server. In Nginx Proxy Manager, create a Proxy Host for your domain and forward it to `127.0.0.1:8080`. Configure HTTPS in Nginx Proxy Manager rather than inside this application container.
