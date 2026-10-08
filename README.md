@@ -42,4 +42,4 @@ git pull origin main
 docker compose up -d --build
 ```
 
-The container listens on `127.0.0.1:8080`, so it is only reachable locally on the server. In Nginx Proxy Manager, create a Proxy Host for your domain and forward it to `127.0.0.1:8080`. Configure HTTPS in Nginx Proxy Manager rather than inside this application container.
+The container listens on server port `8080`. When Nginx Proxy Manager runs in Docker, create a Proxy Host for your domain and forward it to the Azure server's private IP address on port `8080` (for example, `10.0.0.4:8080`). Configure HTTPS in Nginx Proxy Manager rather than inside this application container. Block public inbound access to port `8080` in the Azure Network Security Group so only the proxy can use it.
