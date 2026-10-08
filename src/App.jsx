@@ -131,7 +131,7 @@ function App() {
               <div className="mt-4 flex gap-2">
                 <a
                   className="grid size-9 place-items-center rounded-full bg-ink text-white transition-all hover:bg-brand hover:scale-110 shadow-sm"
-                  href="https://github.com"
+                  href="https://github.com/ByteMeLol"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
