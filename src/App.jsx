@@ -211,7 +211,7 @@ function App() {
               <a
                 key={name}
                 href={url}
-                className={`group relative flex min-h-[220px] flex-col overflow-hidden p-5 transition-transform hover:-translate-y-1 ${color}`}
+                className={`group relative flex min-h-[220px] flex-col overflow-hidden p-5 transition-transform hover:-translate-y-1 `}
               >
                 {/* Background Screenshot (Subtle Reveal) */}
                 <div className="absolute inset-0 z-0">
