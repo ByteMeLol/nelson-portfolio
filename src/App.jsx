@@ -206,35 +206,39 @@ function App() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid gap-3 md:grid-cols-3">
-            {projects.map(([name, type, color, imageSrc, url]) => (
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map(([name, type, _color, imageSrc, url], index) => (
               <a
-                key={name}
-                href={url}
-                className={`group relative flex min-h-[220px] flex-col overflow-hidden p-5 transition-transform hover:-translate-y-1 `}
+                key={`${name}-${index}`}
+                href={url || '#contact'}
+                target={url ? '_blank' : undefined}
+                rel={url ? 'noreferrer' : undefined}
+                className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl"
               >
-                {/* Background Screenshot (Subtle Reveal) */}
-                <div className="absolute inset-0 z-0">
-                  <img
-                    src={imageSrc}
-                    alt={`${name} project preview`}
-                    className="h-full w-full object-cover object-top opacity-5 transition-opacity duration-300 group-hover:opacity-100"
-                  />
-                </div>
-
-                {/* Top Tag & Project Name (Kept original styling) */}
-                <div className="relative z-10">
-                  <span className="font-mono text-[9px] uppercase tracking-wider text-black">
-                    {type}
+                <div className="relative h-56 overflow-hidden bg-slate-100">
+                  {imageSrc ? (
+                    <img
+                      src={imageSrc}
+                      alt={`${name} project preview`}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-50 to-cyan-100">
+                      <span className="font-mono text-5xl font-semibold tracking-[-.1em] text-blue-200">0{index + 1}</span>
+                    </div>
+                  )}
+                  <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 font-mono text-[9px] uppercase tracking-wider text-slate-600 shadow-sm">
+                    0{index + 1}
                   </span>
-                  <strong className="block text-4xl font-semibold tracking-[-.08em] text-black">
-                    {name}
-                  </strong>
                 </div>
-
-                {/* Center Icon (Nicer Design update) */}
-                <div className="relative z-10 flex-1 flex items-center justify-center">
-                  <span className="grid size-10 place-items-center rounded-full bg-black/5 text-white backdrop-blur-sm transition-transform duration-300 group-hover:scale-110 group-hover:bg-brand group-hover:text-white">
+                <div className="flex items-end justify-between gap-4 p-5">
+                  <div>
+                    <span className="font-mono text-[9px] uppercase tracking-wider text-slate-500">{type}</span>
+                    <strong className="mt-2 block text-2xl font-semibold tracking-[-.06em] text-ink">{name}</strong>
+                  </div>
+                  <span className="grid size-10 shrink-0 place-items-center rounded-full bg-slate-100 text-ink transition-colors group-hover:bg-brand group-hover:text-white">
                     <Arrow />
                   </span>
                 </div>
