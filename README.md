@@ -42,4 +42,4 @@ git pull origin main
 docker compose up -d --build
 ```
 
-The container listens on server port `8080`. When Nginx Proxy Manager runs in Docker, create a Proxy Host for your domain and forward it to the Azure server's private IP address on port `8080` (for example, `10.0.0.4:8080`). Configure HTTPS in Nginx Proxy Manager rather than inside this application container. Block public inbound access to port `8080` in the Azure Network Security Group so only the proxy can use it.
+The portfolio joins the existing Docker network named `proxy`, shared with Nginx Proxy Manager. In Nginx Proxy Manager, create a Proxy Host for your domain and forward it to `nelson-portfolio` on port `80`. Configure HTTPS in Nginx Proxy Manager rather than inside this application container.
