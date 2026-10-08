@@ -80,7 +80,7 @@ function App() {
                   <i className="size-16 rounded-full border-2 border-white bg-neutral-400 shadow-sm" ><img src={java} alt="Nelson Sauka" className="w-full h-full object-cover rounded-full" /></i>
                   <i className="size-16 rounded-full border-2 border-white bg-[#d19b7c] shadow-sm" ><img src={postgres} alt="Nelson Sauka" className="w-full h-full object-cover rounded-full" /></i>
                   <i className="size-16 rounded-full border-2 border-white bg-[#f05340] shadow-sm" ><img src={laravel} alt="Nelson Sauka" className="w-full h-full object-cover rounded-full" /></i>
-                  <i className="size-16 rounded-full border-2 border-white bg-[#61dafb] shadow-sm" ><img src={springboot} alt="Nelson Sauka" className="w-full h-full object-cover rounded-full" /></i>
+                  <i className="size-16 rounded-full border-2 border-white bg-neutral-600 shadow-sm" />
                 </div>
                 <div className="text-left">
                   <strong className="block text-xs font-bold text-brand">1 year</strong>
