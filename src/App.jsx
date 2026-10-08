@@ -207,10 +207,10 @@ function App() {
 
           {/* Projects Grid */}
           <div className="grid gap-3 md:grid-cols-3">
-            {projects.map(([name, type, color, imageSrc]) => (
+            {projects.map(([name, type, color, imageSrc, url]) => (
               <a
                 key={name}
-                href={}
+                href={url || '#'}
                 className={`group relative flex min-h-[220px] flex-col overflow-hidden p-5 transition-transform hover:-translate-y-1 ${color}`}
               >
                 {/* Background Screenshot (Subtle Reveal) */}
