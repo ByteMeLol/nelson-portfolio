@@ -140,7 +140,7 @@ function App() {
                 </a>
                 <a
                   className="grid size-9 place-items-center rounded-full bg-ink text-white transition-all hover:bg-brand hover:scale-110 shadow-sm"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/nelson-sauka-178a39294"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
