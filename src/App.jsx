@@ -14,12 +14,12 @@ const services = [
 ]
 
 const projects = [
-  ['Heavlink', 'SaaS platform · 2025', 'bg-brand',heavlink,'heavlink.com'],
-  ['Heavage', 'logistic · 2026', 'bg-ink text-white', heavage,'transport.hevage.co.tz'],
-  ['HadaInvestent', 'Web application · 2025', 'bg-sky/30', hada,'hadainvestment.co.tz'],
-  ['2Bros','Inventory management · 2026', 'bg-ink text-white'],
-  ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand'],
-  ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand'],
+  ['Heavlink', 'SaaS platform · 2025', 'bg-brand', heavlink, 'https://heavlink.com'],
+  ['Heavage', 'Logistics · 2026', 'bg-ink text-white', heavage, 'https://transport.hevage.co.tz'],
+  ['Hada Investment', 'Web application · 2025', 'bg-sky/30', hada, 'https://hadainvestment.co.tz'],
+  ['2Bros', 'Inventory management · 2026', 'bg-ink text-white', null, null],
+  ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand', null, null],
+  ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand', null, null],
 ]
 
 const experience = [
@@ -222,7 +222,7 @@ function App() {
                       alt={`${name} project preview`}
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className="h-full w-full object-cover object-top opacity-100 transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
                     <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-50 to-cyan-100">
