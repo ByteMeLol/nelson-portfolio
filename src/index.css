@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss/index.css";
+
+@theme {
+  --font-sans: 'Manrope', Arial, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --color-brand: #2563eb;
+  --color-blue: #0284c7;
+  --color-cyan: #06b6d4;
+  --color-sky: #67e8f9;
+  --color-soft: #ecfeff;
+  --color-paper: #ffffff;
+  --color-ink: #0f172a;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { min-width: 320px; background: var(--color-paper); color: var(--color-ink); }
+}
