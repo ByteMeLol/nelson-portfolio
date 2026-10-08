@@ -78,7 +78,7 @@ function App() {
                   <i className="size-16 rounded-full border-2 border-white bg-neutral-600 shadow-sm" />
                 </div>
                 <div className="text-left">
-                  <strong className="block text-xs font-bold text-brand">2+ years</strong>
+                  <strong className="block text-xs font-bold text-brand">1 years</strong>
                   <small className="block text-[10px] text-neutral-400">building for the web</small>
                 </div>
               </div>
