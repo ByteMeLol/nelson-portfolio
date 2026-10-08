@@ -3,7 +3,7 @@ import logo from './assets/icon.svg'
 import hada from './assets/hada.png'
 import heavlink from './assets/heavlink.png'
 import heavage from './assets/heavage.png'
-import me from './assets/me.png'
+import me from './assets/me.webp'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const services = [
@@ -97,7 +97,11 @@ function App() {
                 <img
                   src={me}
                   alt="Nelson Sauka"
-                  className="block h-full max-h-[360px] sm:max-h-[440px] md:max-h-[500px] lg:max-h-[560px] w-auto object-contain object-bottom drop-shadow-2xl transition-transform duration-300 hover:scale-[1.02]"
+                  width="1000"
+                  height="1498"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="block h-full max-h-[360px] w-auto object-contain object-bottom drop-shadow-2xl transition-transform duration-300 hover:scale-[1.02] sm:max-h-[440px] md:max-h-[500px] lg:max-h-[560px]"
                 />
               </div>
             </div>
