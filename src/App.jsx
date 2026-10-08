@@ -14,9 +14,9 @@ const services = [
 ]
 
 const projects = [
-  ['Heavlink', 'SaaS platform · 2025', 'bg-brand',heavlink],
-  ['Heavage', 'logistic · 2026', 'bg-ink text-white', heavage],
-  ['HadaInvestent', 'Web application · 2025', 'bg-sky/30', hada],
+  ['Heavlink', 'SaaS platform · 2025', 'bg-brand',heavlink,'heavlink.com'],
+  ['Heavage', 'logistic · 2026', 'bg-ink text-white', heavage,'transport.hevage.co.tz'],
+  ['HadaInvestent', 'Web application · 2025', 'bg-sky/30', hada,'hadainvestment.co.tz'],
   ['2Bros','Inventory management · 2026', 'bg-ink text-white'],
   ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand'],
   ['Graphic Design', 'Branding & visual identity · 2024', 'bg-brand'],
@@ -210,7 +210,7 @@ function App() {
             {projects.map(([name, type, color, imageSrc]) => (
               <a
                 key={name}
-                href="#contact"
+                href={}
                 className={`group relative flex min-h-[220px] flex-col overflow-hidden p-5 transition-transform hover:-translate-y-1 ${color}`}
               >
                 {/* Background Screenshot (Subtle Reveal) */}
