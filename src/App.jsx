@@ -29,8 +29,8 @@ const projects = [
 
 const experience = [
   ['Junior Software Developer', 'Heavsof Limited · Dar es Salaam, Tanzania', 'Aug 2025 — Present', 'Building and maintaining software solutions, contributing to frontend and backend development, and working with a team to deliver reliable digital products.'],
-  ['Software Developer', 'DOPS Technology · Dar es Salaam, Tanzania', 'Jan 2025 — Sep 2025', 'Developed practical software solutions, worked with APIs and databases, and contributed to responsive web applications.'],
-  ['Freelance Graphic Designer & Software Developer', 'Independent · Dar es Salaam, Tanzania', 'Ongoing', 'Delivered graphic design and software development work for Bookiper, ADM, Baobab Hospital, and Domexa, combining clear visual communication with useful digital experiences.'],
+  ['Junior Software Developer', 'DOPS Technology · Dar es Salaam, Tanzania', 'Jan 2025 — Sep 2025', 'Developed practical software solutions, worked with APIs and databases, and contributed to responsive web applications.'],
+  ['Freelance Graphic Designer', 'Independent · Dar es Salaam, Tanzania', 'Ongoing', 'Delivered graphic design and software development work for Bookiper, ADM, Baobab Hospital, and Domexa, combining clear visual communication with useful digital experiences.'],
 ]
 
 const Arrow = () => <span aria-hidden="true" className="text-lg leading-none text-brand">↗</span>
